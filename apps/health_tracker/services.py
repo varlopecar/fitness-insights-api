@@ -1,7 +1,6 @@
 from datetime import datetime, timedelta
 from sqlalchemy.orm import Session
-from common.models import UserProfile, ActivityData, SleepData
-
+from apps.health_tracker.models import ActivityData, SleepData
 
 class HealthScoreService:
     def __init__(self, db_session: Session):
